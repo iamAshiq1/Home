@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <script>
+      //function that display value
+      function dis(val)
+      {
+        document.getElementById("result").value += val
+      }
+
+      //function that evaluates the digit and return result
+      function solve()
+      {
+        let x = document.getElementById("result").value
+        let y = eval(x)
+        document.getElementById("result").value = y
+      }
+
+      //function that clear the display
+      function clr()
+      {
+        document.getElementById("result").value = ""
+      }
+    </script>
+    <!-- for styling -->
+    <style>
+      nav li{
+          list-style: none;
+          margin-right: 20px;
+          padding: 0px 10px;
+      }
+      nav li:hover{
+          background-color: rgb(0, 0, 0);
+      }
+      nav a{
+          text-decoration: none;
+          color: rgb(185, 23, 23);
+          font-size: 30px;
+      }
+      nav ul{display: flex;
+      }
+  </style>
+
+  <style>
+      body{
+        font-size: 10px;
+        width: 100%;
+      }
+    input.R[type="button"]
+      {background-color:#FFA500;}
+    input.A[type="button"]
+      {background-color:#008000;}
+    input.S[type="button"]
+      {background-color:darkred;}
+    input.M[type="button"]
+      {background-color:#000039;}
+    input.D[type="button"]
+      {background-color:#00B7EB;}
+      h1{
+          margin-bottom: 10px;
+      		text-align:center;
+      		color: #000039;
+      		}
+      		input[type="button"]
+      		{
+      		background-color:gray;
+       color:white;
+      		border:4px;
+      		width:100%
+      		}
+        .calc{
+          width: 50%;
+        }
+      		input[type="text"]
+      		{
+      		color:black;
+      		border:solid black 1px;
+      		width:100%
+      		}
+    </style>
+  </head>
+  <body>
+
+    
+      <header>
+        <nav>
+            <ul>
+                <li> <a href="Home.html">Home</a></li>
+                <li> <a href="table.html">Table</a></li>
+                <li> <a href="index.html">Sign In</a></li>
+                <li> <a href="calc.html">Calculator</a></li>
+                <li> <a href="audio-video5.html">Media</a></li>
+            </ul>
+        </nav>
+        </header>
+        <hr>
+<center>
+    <h1>Ashik's Calculator</h1></br>
+    <div class="calc">
+    <table border="1">
+      <tr>
+        <td colspan="4">
+          <input type="text" id="result" />
+        </td>
+        <!-- clr() function will call clr to clear all value -->
+        
+      </tr>
+      <tr>
+        <!-- create button and assign value to each button -->
+        <!-- dis("1") will call function dis to display value -->
+      <td>
+          <input type="button" value="1" onclick="dis('1')" /> </td>
+        <td>
+          <input type="button" value="2" onclick="dis('2')" /> </td>
+        <td>
+          <input type="button" value="3" onclick="dis('3')" /> </td>
+        <td>
+          <input class="D" type="button" value="/" onclick="dis('/')" />
+      </td>
+     
+ </tr>
+      <tr>
+        <td>
+          <input type="button" value="4" onclick="dis('4')" /> </td>
+        <td>
+          <input type="button" value="5" onclick="dis('5')" /> </td>
+        <td>
+          <input type="button" value="6" onclick="dis('6')" /> </td>
+        <td>
+          <input class="S" type="button" value="-" onclick="dis('-')" /> </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="7" onclick="dis('7')" /> </td>
+        <td>
+          <input type="button" value="8" onclick="dis('8')" /> </td>
+        <td>
+          <input type="button" value="9" onclick="dis('9')" /> </td>
+        <td>
+          <input class="A" type="button" value="+" onclick="dis('+')" /> </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="." onclick="dis('.')" /> </td>
+        <td>
+          <input type="button" value="00" onclick="dis('00')" /> </td>
+        <td>
+          <input type="button" value="C" onclick="clr()" /> </td>
+        <td>
+          <input class="M" type="button" value="*" onclick="dis('*')" /> </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="0" onclick="dis('00')" </td>
+        <td>
+          <input type="button" value="π" onclick="dis('3.1416')" </td>
+      <td colspan="2">
+          <input class="R" type="button" value="=" onclick="solve()" /> </td>
+        </tr>
+   </table>
+  </div>
+</center>
+</body>
+</html>

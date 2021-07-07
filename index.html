@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashik's Website Login</title>
+    <link rel="shortcut icon" href="https://www.iconpacks.net/icons/1/free-user-login-icon-305-thumb.png" type="image/x-icon">
+    <style>
+      nav li{
+          list-style: none;
+          margin-right: 20px;
+          padding: 0px 10px;
+      }
+      nav li:hover{
+          background-color: rgb(0, 0, 0);
+      }
+      nav a{
+          text-decoration: none;
+          color: rgb(182, 24, 24);
+          font-size: 30px;
+      }
+      nav ul{display: flex;
+      }
+  </style> 
+
+<style>
+    body{font-size: 20px;
+      background-image:url('https://storage.googleapis.com/uxfolio/5a842a6421f1180004091277/5a842a6421f1180004091278/VD3H3nNiL4hlovsT.jpg') ;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li> <a href="Home.html">Home</a></li>
+            <li> <a href="table.html">Table</a></li>
+            <li> <a href="index.html">Sign In</a></li>
+            <li> <a href="calc.html">Calculator</a></li>
+            <li> <a href="audio-video5.html">Media</a></li>
+        </ul>
+    </nav>
+    </header>
+    <hr>
+<center>
+<div style="color: darkred;">
+    <h1><b>Sign up</b></h1>
+    <hr><br>
+    </div>
+    <form>
+        <label="name"><b style="color:blue";>Name:</b></label>
+   <div>
+       <input class="ny" type="text" name="username" id="name" placeholder="Enter name">
+    </div> <br>
+    <!--text for user to clearfie put there name and name=uysername for server-->
+    <label="email"><b style="color:blue">Email:</b></label>
+    <div>
+        <input class="my" type="email" name="useremail" id="email" placeholder="Enter Email">
+    </div><br>
+    <label="password"><b style="color:blue">Password:</b></label>
+  <div>
+    <input class="py" type="password" name="userpassword" id="password" placeholder="Enter password">
+</div><br>
+<label="tel"><b style="color: midnightblue;">Mobile:</b></label>
+  <div>
+<input class="ty" type="number" name="usermobile" id="tel" placeholder="Enter number"> 
+</div><br>
+  <b style="color:orange";>Date of Birth:</b><input class="DB" type="date" name="dob"><br><br>
+  <b style="color:purple";>Please Select your Gender</b><br>
+  <i style="color:maroon";> Male:</i> <input type="radio" name="gander" value="male" ><br>
+  <i style="color:maroon";>Female:</i> <input type="radio" name="gander" value="female"><br>
+  <i style="color:maroon";>Other:</i> <input type="radio" name="gander" value="other"><br><br>
+  <!--name = gender what for server the main reason is every radio button can't be select at a time otherwise every radio button will be selected  -->
+  <b style="color:#000036";>Select Language</b></br>
+    <i>English:</i><input type="checkbox" name="lang" value="English"><br>
+  <i>Bangla:</i><input type="checkbox" name="lang" value="Bangla" ><br>
+  <i>Urdu:</i><input type="checkbox" name="lang" value="urdu"><br><br>
+  <div>
+    <label for="profession"><i style="color:darkslateblue">Select profession</i></label>
+    <select name="Profession" id="profession">
+        <option value="web">Web</option>
+        <option value="android">Android</option>
+        <option value="mac">Mac</option>
+        <option value="ios">Ios</option>
+    </select>
+  </div><br>
+  <label for="file">Upload your CV:</label><br>
+  <input type="file" value="file" id="file"><br><br>
+ <div>
+     Write whatever you want: <br><textarea name="textarea" cols="50" rows="10"></textarea>
+    </div> <br>
+  <input type="submit" value="SUBMIT">  
+  <input type="reset" value="Reset"> <br><br>
+  <hr>
+  <div style="color:Darkred";><h1><b>Already SignUp?</b></h1></div><hr><br>
+  <label for="email1">Email:</label>
+  <div>
+      <input type="email" name="useremail" id="email1">
+  </div><br>
+  <label for="password1">Password:</label>
+<div>
+  <input type="password" name="userpassword" id="password1">
+</div><br>
+<div>
+    <input type="submit" value="Login" name="forlogin">
+</div>
+</form>
+</center>
+</body>
+</html>
